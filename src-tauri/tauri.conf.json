@@ -1,0 +1,68 @@
+{
+  "package": {
+    "productName": "Request",
+    "version": "1.1.6"
+  },
+  "build": {
+    "distDir": "../dist",
+    "devPath": "http://localhost:5173",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.SodaPortal.request",
+      "icon": ["icons/icon.ico", "icons/icon.png", "icons/16x16.png", "icons/32x32.png", "icons/64x64.png", "icons/128x128.png", "icons/256x256.png"],
+      "resources": [],
+      "externalBin": [],
+      "copyright": "",
+      "category": "DeveloperTool",
+      "shortDescription": "Request is a minimal http client for api development and testing.",
+      "longDescription": "Request is a minimal http client for api development and testing.\nRequest provides features like custom headers, performance look-up, code generation, request save and much more.\nRequest is an open-source app and you can access the source code from github.com/SodaPortal/request.",
+      "deb": {
+        "depends": []
+      },
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "updater": {
+      "active": false
+    },
+    "allowlist": {
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["https://**", "http://**"]
+      },
+      "clipboard": {
+        "writeText": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Request HTTP Client",
+        "width": 1000,
+        "height": 600,
+        "minWidth": 1000,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
