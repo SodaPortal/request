@@ -15,7 +15,6 @@ Minimal HTTP client for API development and testing.
 ![ss5](/screenshots/ss5.png)
 ![ss6](/screenshots/ss6.png)
 ![ss7](/screenshots/ss7.png)
-![ss8](/screenshots/ss8.png)
 
 </div>
 
